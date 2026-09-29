@@ -33,7 +33,12 @@ export default function HomePage() {
         <Footer />
 
         <div className="fixed bottom-4 right-4 z-40 md:hidden">
-          <WhatsAppButton label="WhatsApp Now" variant="primary" className="h-14 w-14 rounded-full p-0 text-base shadow-lg" />
+          <WhatsAppButton
+            label="WhatsApp Now"
+            variant="primary"
+            iconOnly
+            className="h-14 w-14 rounded-full p-0 shadow-lg"
+          />
         </div>
       </div>
     </>

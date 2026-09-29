@@ -36,3 +36,15 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 # challeneasy.in
+
+## Deploy on Netlify
+
+This project is configured for Netlify with the Next.js runtime plugin.
+
+1. Push the project to GitHub, GitLab, or Bitbucket.
+2. In Netlify, choose **Add new site** and import the repository.
+3. Keep the detected build command as `npm run build`. The repository includes `netlify.toml` with the required settings.
+4. Set the production Node.js version to `22` in Netlify under **Project configuration > Environment variables** by adding `NODE_VERSION=22`.
+5. Deploy the site.
+
+The public site and WhatsApp links do not require environment variables. Lead submissions currently use an in-memory store, so Netlify function instances should not be treated as permanent storage. Connect a persistent database before relying on the admin lead dashboard in production.

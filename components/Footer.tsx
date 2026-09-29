@@ -4,9 +4,9 @@ import { siteConfig } from "@/lib/site";
 export function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-8 md:grid-cols-3">
-          <div>
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
+        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+          <div className="sm:col-span-2 md:col-span-1">
             <h3 className="text-2xl font-bold text-slate-900">{siteConfig.name}</h3>
             <p className="mt-3 max-w-sm text-sm leading-6 text-slate-600">
               Vehicle Challan Assistance & Settlement Support

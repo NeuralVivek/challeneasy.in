@@ -9,6 +9,7 @@ type WhatsAppButtonProps = {
   vehicleNumber?: string;
   variant?: Variant;
   className?: string;
+  iconOnly?: boolean;
 };
 
 export function WhatsAppButton({
@@ -16,6 +17,7 @@ export function WhatsAppButton({
   vehicleNumber,
   variant = "primary",
   className = "",
+  iconOnly = false,
 }: WhatsAppButtonProps) {
   const href = buildWhatsAppLink(vehicleNumber);
   const baseClasses =
@@ -34,10 +36,12 @@ export function WhatsAppButton({
       href={href}
       target="_blank"
       rel="noreferrer"
+      aria-label={iconOnly ? label : undefined}
+      title={iconOnly ? label : undefined}
       className={`${baseClasses} ${variants[variant]} ${className}`}
     >
       <MessageCircleMore className="h-4 w-4" aria-hidden="true" />
-      <span>{label}</span>
+      {!iconOnly ? <span>{label}</span> : null}
     </Link>
   );
 }

@@ -63,10 +63,10 @@ export function LeadForm({ compact = false }: { compact?: boolean }) {
   };
 
   return (
-    <div className={`rounded-2xl border border-slate-200 bg-white ${compact ? "p-4" : "p-5 shadow-sm"}`}>
+    <div className={`rounded-2xl border border-slate-200 bg-white ${compact ? "p-4" : "p-4 shadow-sm sm:p-5"}`}>
       <div className="mb-4">
         <p className="text-sm font-semibold uppercase tracking-[0.12em] text-orange-600">Quick Assistance</p>
-        <h3 className="mt-2 text-2xl font-bold text-slate-900">Request a challan review</h3>
+        <h3 className="mt-2 text-xl font-bold text-slate-900 sm:text-2xl">Request a challan review</h3>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
