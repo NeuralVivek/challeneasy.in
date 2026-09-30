@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 const siteUrl = "https://challaneasy.in";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/about", "/services", "/faq", "/contact", "/testimonials", "/privacy-policy", "/terms", "/disclaimer"];
+  const routes = ["", "/about", "/services", "/check-challan", "/challan-settlement", "/faq", "/contact", "/testimonials", "/privacy-policy", "/terms", "/disclaimer"];
 
   return routes.map((route) => ({
     url: `${siteUrl}${route}`,

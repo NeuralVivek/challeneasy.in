@@ -17,6 +17,7 @@ export function Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-[0.12em] text-slate-600">Quick Links</h4>
             <ul className="mt-4 space-y-2 text-sm text-slate-600">
               <li><Link href="/">Home</Link></li>
+              <li><Link href="/check-challan">Check Challan</Link></li>
               <li><Link href="/services">Services</Link></li>
               <li><Link href="/about">About</Link></li>
               <li><Link href="/faq">FAQ</Link></li>

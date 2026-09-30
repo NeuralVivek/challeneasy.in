@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   description:
     "Get professional assistance for pending vehicle challans, traffic challan payment and challan settlement. Talk to ChallanEasy.in on WhatsApp for guidance.",
   alternates: { canonical: "/" },
+  verification: {
+    google: "I3y_pgVZVY0veByZbvNufFl--o9wiCvuCdxB4fcRcVw",
+  },
   openGraph: {
     title: "Vehicle Challan Settlement & Assistance | ChallanEasy.in",
     description:

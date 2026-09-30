@@ -19,6 +19,7 @@ export const businessStats = {
 
 export const navItems = [
   { label: "Home", href: "/" },
+  { label: "Check Challan", href: "/check-challan" },
   { label: "Services", href: "/services" },
   { label: "How It Works", href: "/#how-it-works" },
   { label: "Testimonials", href: "/testimonials" },
