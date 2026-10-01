@@ -1,18 +1,14 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
 import { Services } from "@/components/Services";
-import { siteConfig } from "@/lib/site";
+import { topicMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = topicMetadata({
+  path: "/services",
   title: "Vehicle Challan Services | ChallanEasy.in",
-  description: "Get support for pending challan assistance, payment guidance, settlement understanding, and court challan-related questions.",
-  alternates: { canonical: "/services" },
-  openGraph: {
-    title: "Vehicle Challan Services | ChallanEasy.in",
-    description: "Get support for pending challan assistance, payment guidance, and settlement-related help.",
-    url: `${siteConfig.siteUrl}/services`,
-  },
-};
+  description: "Get support for pending challans, payment guidance, settlement understanding and court challan-related questions.",
+  kind: "service",
+});
 
 export default function ServicesPage() {
   return (

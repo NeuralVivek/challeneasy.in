@@ -3,13 +3,15 @@ import { PageHeader } from "@/components/PageHeader";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { siteConfig } from "@/lib/site";
+import { topicMetadata } from "@/lib/seo";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = topicMetadata({
+  path: "/contact",
   title: "Contact ChallanEasy.in | WhatsApp Assistance",
-  description: "Talk to ChallanEasy.in on WhatsApp for vehicle challan assistance and guidance.",
-  alternates: { canonical: "/contact" },
-};
+  description: "Contact ChallanEasy for independent vehicle challan assistance and guidance through WhatsApp or phone.",
+  kind: "service",
+});
 
 export default function ContactPage() {
   return (

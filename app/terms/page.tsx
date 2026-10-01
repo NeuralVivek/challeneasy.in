@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { PageHeader } from "@/components/PageHeader";
 import { Footer } from "@/components/Footer";
+import { topicMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = topicMetadata({
+  path: "/terms",
   title: "Terms & Conditions | ChallanEasy.in",
-  description: "Terms and conditions for using ChallanEasy.in vehicle challan assistance services.",
-  alternates: { canonical: "/terms" },
-};
+  description: "Terms and conditions for using ChallanEasy vehicle challan assistance services.",
+  kind: "service",
+});
 
 export default function TermsPage() {
   return (

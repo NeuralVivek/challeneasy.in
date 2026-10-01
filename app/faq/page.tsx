@@ -3,20 +3,15 @@ import { FAQ } from "@/components/FAQ";
 import { PageHeader } from "@/components/PageHeader";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { siteConfig } from "@/lib/site";
-import { faqSchema } from "@/lib/seo";
+import { faqSchema, topicMetadata } from "@/lib/seo";
 import { faqItems } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = topicMetadata({
+  path: "/faq",
   title: "Vehicle Challan FAQ | ChallanEasy.in",
-  description: "Common answers about checking, paying, and understanding pending vehicle challans and challan settlement questions.",
-  alternates: { canonical: "/faq" },
-  openGraph: {
-    title: "Vehicle Challan FAQ | ChallanEasy.in",
-    description: "Understand pending challan questions, payment steps, and settlement guidance.",
-    url: `${siteConfig.siteUrl}/faq`,
-  },
-};
+  description: "Common answers about checking, paying and understanding pending vehicle challans and settlement questions.",
+  kind: "service",
+});
 
 export default function FAQPage() {
   return (

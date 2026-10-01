@@ -63,3 +63,37 @@ export const faqSchema = (faqList: ReadonlyArray<{ question: string; answer: str
     },
   })),
 });
+
+export function topicMetadata({
+  path,
+  title,
+  description,
+  kind,
+}: {
+  path: string;
+  title: string;
+  description: string;
+  kind: "service" | "guide";
+}): Metadata {
+  const url = `${siteUrl}${path}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: path },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: kind === "guide" ? "article" : "website",
+      siteName: "ChallanEasy.in",
+      images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-image.svg"],
+    },
+  };
+}

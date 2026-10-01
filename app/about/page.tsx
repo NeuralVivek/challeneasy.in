@@ -2,18 +2,14 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
-import { siteConfig } from "@/lib/site";
+import { topicMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = topicMetadata({
+  path: "/about",
   title: "About ChallanEasy.in | Vehicle Challan Assistance",
-  description: "Learn about ChallanEasy.in and how we help vehicle owners understand pending challan issues and next steps.",
-  alternates: { canonical: "/about" },
-  openGraph: {
-    title: "About ChallanEasy.in | Vehicle Challan Assistance",
-    description: "Independent private challan assistance platform for vehicle owners.",
-    url: `${siteConfig.siteUrl}/about`,
-  },
-};
+  description: "Learn how ChallanEasy helps vehicle owners understand pending challan issues and next steps as an independent private service.",
+  kind: "service",
+});
 
 export default function AboutPage() {
   return (

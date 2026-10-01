@@ -30,31 +30,37 @@ export const navItems = [
 export const services = [
   {
     title: "Pending Challan Assistance",
+    href: "/pending-challan",
     description:
       "Get help understanding pending challan notices, due dates, and the next steps to resolve them properly.",
   },
   {
     title: "Challan Status Guidance",
+    href: "/check-challan",
     description:
       "Understand the current status of your challan and what action may be required for payment or follow-up.",
   },
   {
     title: "Challan Payment Assistance",
+    href: "/challan-payment",
     description:
       "Get clear guidance around payment-related steps, timelines, and verification before making a payment.",
   },
   {
     title: "Virtual Court / Court Challan Guidance",
+    href: "/court-challan-settlement",
     description:
       "Learn how court-related challan matters are handled and what documents or follow-up may be relevant.",
   },
   {
     title: "Traffic Challan Settlement Assistance",
+    href: "/challan-settlement",
     description:
       "Receive support with understanding settlement-related processes and the practical steps involved.",
   },
   {
     title: "Vehicle Challan Documentation Support",
+    href: "/contact",
     description:
       "Get help organizing the documents and information needed to understand and resolve a vehicle challan matter.",
   },

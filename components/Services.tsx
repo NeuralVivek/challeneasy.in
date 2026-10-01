@@ -20,8 +20,8 @@ export function Services() {
             </div>
             <h3 className="mt-5 text-xl font-semibold text-slate-900">{service.title}</h3>
             <p className="mt-3 text-sm leading-6 text-slate-600">{service.description}</p>
-            <Link href="/contact" className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
-              Get Assistance <ArrowRight className="h-4 w-4" />
+            <Link href={service.href} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
+              Learn more <ArrowRight className="h-4 w-4" />
             </Link>
           </article>
         ))}

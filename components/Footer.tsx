@@ -18,6 +18,9 @@ export function Footer() {
             <ul className="mt-4 space-y-2 text-sm text-slate-600">
               <li><Link href="/">Home</Link></li>
               <li><Link href="/check-challan">Check Challan</Link></li>
+              <li><Link href="/challan-settlement">Challan Settlement</Link></li>
+              <li><Link href="/pending-challan">Pending Challan</Link></li>
+              <li><Link href="/guides">Challan Guides</Link></li>
               <li><Link href="/services">Services</Link></li>
               <li><Link href="/about">About</Link></li>
               <li><Link href="/faq">FAQ</Link></li>

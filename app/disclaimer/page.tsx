@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { PageHeader } from "@/components/PageHeader";
 import { Footer } from "@/components/Footer";
+import { topicMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = topicMetadata({
+  path: "/disclaimer",
   title: "Disclaimer | ChallanEasy.in",
-  description: "Disclaimer and legal notice for ChallanEasy.in vehicle challan assistance services.",
-  alternates: { canonical: "/disclaimer" },
-};
+  description: "Disclaimer and legal notice for ChallanEasy vehicle challan assistance services.",
+  kind: "service",
+});
 
 export default function DisclaimerPage() {
   return (

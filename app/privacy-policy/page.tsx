@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { PageHeader } from "@/components/PageHeader";
 import { Footer } from "@/components/Footer";
+import { topicMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = topicMetadata({
+  path: "/privacy-policy",
   title: "Privacy Policy | ChallanEasy.in",
-  description: "Privacy policy for ChallanEasy.in vehicle challan assistance requests and customer information handling.",
-  alternates: { canonical: "/privacy-policy" },
-};
+  description: "Privacy policy for ChallanEasy vehicle challan assistance requests and customer information handling.",
+  kind: "service",
+});
 
 export default function PrivacyPolicyPage() {
   return (
