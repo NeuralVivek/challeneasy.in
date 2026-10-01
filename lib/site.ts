@@ -10,8 +10,8 @@ export const siteConfig = {
 };
 
 export const businessStats = {
-  casesAssisted: "20K+",
-  settlements: "3K+",
+  casesAssisted: { value: 20000, display: "20K+" },
+  settlements: { value: 3000, display: "3K+" },
   response: "Fast",
 };
 
