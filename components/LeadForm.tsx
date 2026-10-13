@@ -58,7 +58,7 @@ export function LeadForm({ compact = false }: { compact?: boolean }) {
       .filter((line): line is string => line !== null)
       .join("\n");
 
-    const whatsappUrl = `https://wa.me/917678359217?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/918595946246?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
 

@@ -31,7 +31,7 @@ export default function ContactPage() {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <WhatsAppButton label="Talk to an Expert on WhatsApp" variant="primary" className="px-5 py-3.5 text-sm" />
             <a href={siteConfig.phoneHref} className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-slate-50 px-5 py-3.5 text-sm font-semibold text-slate-900 hover:bg-slate-100">
-              Call +91 76783 59217
+              Call +91 8595946246
             </a>
           </div>
         </div>

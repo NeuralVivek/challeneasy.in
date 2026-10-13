@@ -38,7 +38,7 @@ export const organizationSchema = {
     "@type": "ContactPoint",
     contactType: "customer support",
     availableLanguage: ["en-IN"],
-    telephone: "+91-76783-59217",
+    telephone: "+91-8595946246",
   },
 };
 

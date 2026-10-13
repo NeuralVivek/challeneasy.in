@@ -1,10 +1,10 @@
 export const siteConfig = {
   name: "ChallanEasy.in",
   tagline: "Vehicle Challan Assistance & Settlement Support",
-  phoneDisplay: "+91 76783 59217",
-  phoneHref: "tel:+917678359217",
-  waNumber: "917678359217",
-  whatsappLink: "https://wa.me/917678359217",
+  phoneDisplay: "+91 8595946246",
+  phoneHref: "tel:+918595946246",
+  waNumber: "918595946246",
+  whatsappLink: "https://wa.me/918595946246",
   siteUrl: "https://challaneasy.in",
   canonicalUrl: "https://challaneasy.in/",
 };
